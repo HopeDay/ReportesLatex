@@ -1,49 +1,278 @@
 %% The openany option is here just to remove the blank pages before a new chapter
-\documentclass[11pt,openany]{book}
+\documentclass [a4paper, 12pt]{report} 
 
-\title{Endnotes using pagenote package at the end of a book}
-
-\usepackage{pagenote}
-
-%%%%%%%%%%%%% For customising the endnote markers. Comment these out if you don't want them.
-% To prefix each note number with the chapter number
-\renewcommand{\thepagenote}{\thechapter-\arabic{pagenote}}
-
-% To have a slightly different formatting for the endnote numbers in the text -- smaller text, sans-serif, square brackets
-\renewcommand\notenumintext[1]{\space{\footnotesize\sffamily[FN-#1]}}
-
-% To have a slightly different formatting for the endnote numbers in the notes section. Just the square brackets and sans-serif; normal size.
-\renewcommand\notenuminnotes[1]{{\sffamily[FN-#1] }}
-
-% If you want a different name/heading for the end notes
-\renewcommand{\notesname}{End Notes}
-%%%%%%%%%%%%% End customisation
+\usepackage[spanish]{babel} %idioma
+\usepackage[ansinew]{inputenc} %tildes
+\usepackage[T1]{fontenc} 
+\usepackage{graphics}
+\usepackage[left=3cm,right=3cm,top=3cm,botton=3cm]{geometry} %margenes
+\usepackage{float} % para usar [H]
+\usepackage{makeidx}
 
 
-%% THIS LINE IS MANDATORY
-\makepagenote
-
-\usepackage{hyperref}
-
-\begin{document}
-
-\chapter{Introduction}
-
-Lorem ipsum dolor sit amet, vocent intellegebat at has, ius alienum sententiae ea, dissentiet intellegebat et sea.\pagenote{Eu option mediocrem aliquando sit, te ius sanctus nominati.} Pro ei errem atomorum, at mei copiosae qualisque. Ad pro elit animal partiendo. Senserit adolescens pro ad.
-
-Pri an saepe integre ceteros, usu democritum posidonium necessitatibus ne.\pagenote{Cum fabellas pericula consequat ne, ea eros eripuit eam.} Mei et nisl rebum audiam. Qui utamur fuisset electram ex. Est ne dicat simul vivendum, augue patrioque pri cu, idque ludus vis at. In nobis tractatos nam.
-
-Sale mollis qualisque eum id, molestie constituto ei ius. Duis mediocrem signiferumque vis no, quas nihil qui no, pro ex ocurreret referrentur. Mel no odio meliore noluisse. Soleat adipisci periculis et est, vix purto magna oporteat ex. Enim quaestio signiferumque mea an, id regione graecis nam, impetus erroribus percipitur at nec. An vis dolore maiorum repudiare, ea vel munere vivendo fabellas.
 
 
-\chapter{Continuing on}
+\title{Instituto Tecnológico Superior de Escárcega\\ Ingeniería en Sistemas Computacionales\\ Taller de Investigación II\\ Profesor: Ing. Manuel Arturo Suarez Amendola\\ Informe de investigación}
+\author{Br. Dayra Mariana Lainez Lizcano}
 
-Ex blandit voluptatum sit. Cu duo aeque tractatos, solet expetenda voluptaria pri te. Mutat movet dicit vel ne, an est graeci percipitur, an sumo eloquentiam sea. Eos gloriatur maiestatis no, aliquip copiosae vulputate et usu.\pagenote{Ut pro solum explicari, nam copiosae vivendum te, an sed senserit electram ullamcorper.} Mucius repudiare ne mei.
+\begin{document} 
+ 
+\maketitle 
 
-Sit ei option sapientem laboramus, quo eu reque ancillae repudiare. Quo impedit deserunt sapientem an. Recusabo deseruisse ei eam, vis ignota pericula at. Mea erat erroribus persequeris id. Ea alterum lucilius abhorreant mel, sed animal impedit docendi ne.
+\makeindex
+\begin{theindex}
+\item      Tema de estudio      2
+\item 0.1. Introducción          2
+\item 0.2. Planteamiento del problema       3
+\item 0.3. Metodología             4
+\subitem Descripción de cada actividad a realizar             5
+\subsubitem Definición del tema             5
+\subsubitem Definición de variables y objetivos             5
+\subsubitem Comprensión de la factibilidad del estudio             5
+\subsubitem Busqueda de artículos de referencia             6
+\subsubitem Elaboración del marco referencial             6
+\subsubitem Consulta de permisos para las encuestas             6
+\subsubitem Aplicación de encuestas             6
+\subsubitem Evidencias de aplicación             6
+\subsubitem Captura de resultados de las encuestas             6
+\subsubitem Graficación de resultados             6
+\subsubitem Presentación de resultados             6
+\subitem Puntos de las actividades realizadas             7
+\subsubitem Preguntas de investigación            7
+\subsubitem Variables            7
+\subsubitem Hipótesis            7
+\subsubitem Fuentes de información            7
+\subsubitem Factibilidad            8
+\subsubitem Tipo de investigación            8
+\subsubitem Factibilidad            8
+\item 0.4. Bitácora de actividades            8
+\item 0.5. Evidencias fotográficas            10
+\end{theindex}
+
+\begin{center}
+\textbf{Tema de estudio \\} 
+Importancia de la tecnología en el campo de la salud y su impacto en la población de Escárcega, Campeche.
+\end{center}
 
 
-\appendix %% Up to you -- I just like to have the end notes as an appendix :-)
-\printnotes*
+
+\section{Introducción}
+
+Este informe se realiza para encontrar y demostrar la relación tecnología - salud, el impacto que tiene la primera en esta área ya que se quiere dar a conocer la relevancia del uso de las TIC en la salud, como una forma de ayudar a enfrentar las inequidades en ese ámbito. \\
+Esto surge debido a la notable presencia y uso de la tecnología  en los servicios de salud que se proporcionan, el constante avance de la ciencia hace que en la mayoría de los casos se considere el uso de las TIC para apoyar y habilitar servicios de atención médica y acciones de salud. \\
+En tiempos recientes en México ha existido un gran interés por fortalecer los servicios de salud para ofrecer una mayor efectividad, calidad y eficiencia a los usuarios de estos servicios. Un aspecto central para lograr tales objetivos es sin duda la evaluación de la tecnología para la salud (ETS).\\
+Antes de empezar de lleno se aclara que existen muchas definiciones sobre lo qeu significa tecnología, la que seguiremos es:
+Una tecnología (médica) es cualquier técnica o herramienta, producto o proceso, método o aparato que permita ampliar las capacidades humanas.\\
+Los descubrimientos científicos y técnicos han estado sucediendo desde hace siglos, su mayor influencia en la práctica ha tenido lugar después de la mitad del siglo XX, cuando se han desarrollado con carácter excepcionalmente dinámico. Ese dinamismo se encuentra dado por la rápida sucesión de éstos, y el acortamiento cada vez mayor del tiempo que media entre un descubrimiento y su introducción en la práctica. El caudal de información que se produce cada día es enorme.\\
+Las Tecnologías de la Información y comunicación (TIC) y la digitalización tienen la capacidad de incidir en todos los ámbitos de la vida y la actividad económica, así como los servicios de salud, también la calidad de la educación, el combate a la pobreza, la entrega de servicios públicos las actividades económicas y la vida cotidiana de los ciudadanos. \\
+El método que se planea utilizar para obtener la información y así medir lo que buscamos es mediante la encuesta hacia los pacientes, esto será realizado en las instalaciones del hospital general de Escárcega Dr. Janell Romero Aguilar y de igual manera tomando la opinión de personas que aunque en tiempo real no esten en el hospital, si hayan necesitado de acudir en algun momento.\\
+La tecnología se debe contemplar como la herramienta y no como el fin en sí misma. Construcción de soluciones a problemas prácticos y que proporcionen a los ciudadanos mejoras tangibles en la calidad y acceso a los servicios de salud. Es para la comprobación de esto que se quiere realizar este trabajo de investigación.\\
+
+
+\section{Planteamiento del problema}
+
+Si bien la ciencia y la tecnología nos proporcionan numerosos y positivos beneficios, también traen consigo impactos negativos, de los cuales algunos son imprevisibles, pero todos ellos reflejan los valores, perspectivas y visiones de quienes están en condiciones de tomar decisiones concernientes al conocimiento científico y tecnológico.\\
+La ciencia y la tecnología son procesos sociales profundamente marcados por la civilización donde han crecido; el desarrollo científico y tecnológico requiere de una estimación cuidadosa de sus fuerzas motrices e impactos, un conocimiento profundo de sus interrelaciones con la sociedad.\\
+Junto a esto, los panoramas que muestran el proceso que dio lugar al despegue de estos estudios en los años sesenta, se refieren al esfuerzo por superar visiones tradicionales de la ciencia y la tecnología que subvaloran o ignoran las determinaciones e impactos sociales del desarrollo científico y tecnológico.\\
+Este es un momento oportuno en el que se tratan de identificar en el mundo, los principales problemas de la medicina y la salud pública, sus debilidades, y la necesaria voluntad política y científica para darles solución. Uno de ellos se refiere a la contradicción existente entre las ciencias médicas por un lado y la práctica médica por otro pues existe una tendencia al debilitamiento de la relación médico-paciente y el abandono del método clínico.\\
+Al mismo tiempo, y motivado en parte por la incorporación de tecnología cada vez más sofisticada, se ha producido un encarecimiento progresivo de la atención sanitaria, que junto con el envejecimiento de las poblaciones y otros factores administrativos ha
+motivado un gran aumento del gasto sanitario global. \\
+Teniendo en cuenta que los recursos de los que dispone una sociedad para la atención en salud son limitados, la evaluación de tecnologías sanitarias no se puede limitar a medir la eficacia de las técnicas, sino que es necesario asegurar que se utilizan de forma óptima, es decir, produciendo el máximo beneficio posible. En estos términos se habla del coste de oportunidad, definido como el valor de la mejor alternativa a la que hay que renunciar, por la limitación de los recursos, al efectuar una elección, y que representa el beneficio no obtenido por emplear los recursos en la actividad elegida en lugar de en la mejor de las alternativas.\\
+Tomando en cuenta lo anterior, los estudios de evaluación de estas tecnologias se definen en términos sencillos como la valoración de la seguridad, eficacia, efectividad y eficiencia de los equipos y procedimientos que se utilizan en los servicios de salud para el diagnóstico, tratamiento y rehabilitación de los pacientes.\\
+Por lo tanto, es un campo multidisciplinario de análisis que estudia las implicaciones médicas, sociales, éticas y económicas
+del desarrollo, difusión y uso de tecnología para la salud.
+El trabajo de la evaluación de la tecnología para la salud requiere asimismo la integración de actividades como la investigación, el análisis, la síntesis y la difusión de los resultados de la evaluación.\\
+Para responder a los riesgos de la incorporación no racional de tecnología para la salud y buscar la asignación de nuevos recursos médicos con una base objetiva que garantice su utilidad, se ha iniciado en algunos países diversas actividades para evaluar la tecnología de salud. \\
+Recientemente los esfuerzos en este campo se han visto beneficiados por la creación de oficinas de evaluación de tecnología en 27 países, la mayor parte de ellos europeos. En el momento actual los trabajos de estas agencias incluyen múltiples áreas, desde la evaluación de equipos hasta la evaluación de programas de atención. Todos estos países han sumado esfuerzos para evaluar la nueva tecnología para la salud.\\
+En resumen, se percibe el interés que existe en muchos países, sobre todo los industrializados, para evaluar las nuevas
+tecnologías para la salud. En estos países existe el consenso de que cada país debe buscar la dimensión apropiada de la
+tecnología de acuerdo a sus condiciones particulares.\\
+En el caso de México, la situación de las tecnologías para la salud ha cambiado rápidamente a través del tiempo. Durante la
+década de los setenta prevalecieron los modelos de adopción rápida y descontrolada que paradójicamente, en aquellos
+momentos se interpretaron como evidencias de que México mantenía una firme posición de liderazgo en América Latina, ya que contaba con un sistema de salud moderno y envidiable.\\
+Existen muy pocos antecedentes de investigación sobre la evaluación de la disponibilidad y uso de tecnologías médicas en México.\\
+Es por eso, que aunque para realizar una correcta Evaluación de tecnologias de la salud se requieran de estudios mas especializados y con mejores herramientas, se busca empezar con un poco que se lleve a cabo este tipo de estudios en el municipio de Escarcega, Campeche, para cersionarnos de que realmente se atiende a los ciudadanos de este lugar de la forma correcta que debe ser. Es decir, Este trabajo de investigación es como la primera piedra para empezar proyectos de este tipo.
+
+\section{Metodología}
+
+Para la realización de este estudio se han planificado las actividades que se muestran en el siguiente listado \\
+\\
+Definición del tema    \\ 
+Definición de variables y objetivos            \\ 
+Comprensión de la factibilidad del estudio     \\ 
+Búsqueda de artículos de referencia     \\ 
+Elaboración del marco referencial  \\ 
+Consulta de permisos para las encuestas       \\ 
+Aplicación de encuestas        \\ 
+Evidencias de aplicación     \\ 
+Captura de resultados de las encuestas \\
+Graficación de resultados     \\
+Presentación de resultados \\
+\\
+Con los tiempos estimados de la siguiente manera, transcurridos a lo largo de 12 semanas de trabajo.
+\\
+\begin{table*}[h]
+			\begin{tabular}{||p{4cm}|l|l|l|l|l|l|l|l|l|l|l|l||}
+\hline		
+\hline
+Actividad/Semana  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+\hline
+Definición del tema & X &   &   &   &   &   &   &   &   &   &   &    \\ \hline
+Definición de variables y objetivos           &   & X &   &   &   &   &   &   &   &   &   &    \\ \hline
+Comprensión de la factibilidad del estudio     &   &   & X &   &   &   &   &   &   &   &   &    \\ \hline
+Búsqueda de artículos de referencia     &   &   &   & X & X &   &   &   &   &   &   &    \\ \hline
+Elaboración del marco referencial     &   &   &   &   &   & X & X &   &   &   &   &    \\ \hline
+Consulta de permisos para las encuestas     &   &   &   &   &   &   &   & X &   &   &   &    \\ \hline
+Aplicación de encuestas     &   &   &   &   &   &   &   &   & X &   &   &    \\ \hline
+Evidencias de aplicación      &   &   &   &   &   &   &   &   & X &   &   &    \\ \hline
+Captura de resultados de las encuestas      &   &   &   &   &   &   &   &   &   & X &   &    \\ \hline
+Graficación de resultados      &   &   &   &   &   &   &   &   &   &   & X &    \\ \hline
+Presentación de resultados      &   &   &   &   &   &   &   &   &   &   &   & X  \\
+		\hline
+		\hline
+		\end{tabular}
+\end{table*}
+\\
+\textbf{DESCRIPCIÓN DE CADA ACTIVIDAD A REALIZAR} \\ 
+\\
+\textbf{Definición del tema}    \\ 
+\\ 
+En esta fase se decidió el tema o problematica que se buscaba estudiar o llevar a cabo una medición, en mi caso fue la Importancia de la tecnología en el campo de la salud y su impacto en la población de Escárcega, Campeche. \\
+\\ 
+\textbf{Definición de variables y objetivos}            \\ 
+\\
+En este apartado primero que nada se establece el objetivo, que es a lo que se busca llegar o lo que se quiere obtener, seguido de eso se buscaron cuales serian los puntos mas importantes que se debian tomar en cuenta, es decir los aspectos que tienen mayor relación para llegar hacia el o los objetivos. \\
+\\
+\textbf{Comprensión de la factibilidad del estudio}     \\
+\\
+Aqui se estima las probabilidades positivas para realizar el trabajo de investigación, incluyendo que limitantes podrian presentarse. \\
+\\ 
+\textbf{Búsqueda de artículos de referencia}     \\ 
+\\
+Los articulos de referencia son articulos en los que se trate de estudios como este realizados anteriormente por otras personas con mayor experiencia. Las referencias que se toman son articulos debido a que se encuentran entre las fuentes de informacion mas confiables al momento de realizar consultas en busqueda de información.\\
+Se buscaron una cantidad determinada de articulos en internet, los cuales en su mayoria se encontraron en la pagina "Scielo". \\
+\\
+\textbf{Elaboración del marco referencial}  \\
+\\
+Este incluye un poco de historia basandose en la información obtenida de los objetivos, citando de que trabajo o autor se tomó.  \\
+\\ 
+\textbf{Consulta de permisos para las encuestas}       \\ 
+\\
+Aqui lo que se realizó fue presentarse en el Hospital General para conversar con el director o subdirector y explicarle la actividad se quiere realizar, mostrandole el formato de la encuesta para darle el visto bueno y asi obtener una respuesta de aprobación para aplicarlas a las personas que estuvieran alli en el hospital siendo atendidos. \\
+\\
+\textbf{Aplicación de encuestas}        \\ 
+\\
+Despues de la obtencion del permiso, se procedió a aplicar esas encuestas a algunas personas que tuvieran la disponibilidad de colaborar.  \\
+\\
+\textbf{Evidencias de aplicación}     \\ 
+\\
+Al momento de aplicar las encuestas se tomo captura fotografica de ese momento para comprobación de la actividad. \\
+\\
+\textbf{Captura de resultados de las encuestas} \\
+\\
+Se pasaron los resultados obtenidos de las encuestas para su posterior uso en el software Excel. \\
+\\
+\textbf{Graficación de resultados}     \\
+\\
+Con los resultados capturados anteriormente se procedió a meterlos en gráficas para comparaciones. \\
+\\
+\textbf{Presentación de resultados} \\
+\\
+Tanto los resultados recabados, como sus graficaciones se presentarán en exposición ante el grupo en una determinada fecha. \\
+\\
+\textbf{PUNTOS DE LAS ACTIVIDADES REALIZADAS} \\
+\\
+\textbf{Preguntas de investigación} \\
+ \\
+¿Cuál es el nivel de satisfacción de las personas en cuanto al servicio que se les brinda con la tecnología sanitaria actual? \\
+ \\
+\textbf{Variables} \\
+ \\
+Nivel de satisfacción: ¿El paciente se encuentra satisfecho por la manera en que se le atiende? \\
+Servicio de salud que se le proporciona: consulta, chequeo, análisis, etc. \\
+ \\
+\textbf{Hipótesis} \\
+ \\
+Hecho: Con la aplicación de la tecnología se brinda mejor servicio a los pacientes \\
+Hipótesis: Las herramientas tecnológicas con las que se cuentan son de gran ayuda facilitando así brindar los servicios de salud. \\
+ \\
+\textbf{Fuentes de información} \\
+ \\
+Como se había mencionado anteriormente, la forma en que se recaudan los datos de este estudio es aplicando encuestas a las personas que lleguen a recibir atención médica en el hospital general del municipio de Escárcega denominado como “Dr. Janell Romero Aguilar”.  \\
+\\
+Antes que nada necesitamos buscar información acerca de estudios de la misma tematica realizados con anterioridad. Para eso se ha realizado un proceso de revisión bibliográfica en bibliotecas electrónicas (Scielo, ScienceDirect, etc…). \\
+\\
+A pesar de la creciente difusión de la tecnología médica y de sus implicaciones profundas, existen muy pocas investigaciones sobre sus costos, beneficios y grado de accesibilidad; esta es una observación basada en que antes de realizar la investigación, se procedió a recabar información de artículos que hayan  realizado este tipo de estudios pero solamente se hallaron 20 artículos de los cuales una cantidad menor son realmente útiles para la utilidad final que era conseguir fundamentos de apoyo para este estudio. \\
+ \\
+En cuanto a los datos para concluir los resultados de esta investigación se busca obtener esta información no solo de las opiniones de las personas que estén precisamente en el hospital, sino que igualmente de personas que anteriormente hayan recibido algún tipo de tratamiento o revisión allí. El siguiente listado muestra las  fuentes de donde se considera obtener dicha información. \\
+ \\
+Experiencia personal o familiar \\
+Fuentes tecnológicas como videos y otra información disponible en internet \\
+Experiencias de terceros \\
+Personal del centro de salud de Escárcega, Campeche \\
+ \\
+\textbf{Factibilidad} \\
+ \\
+Debido a que se trata de una investigación basada en aspectos sencillos es factible de realizar pues se cuenta con un centro de salud entre otros lugares del mismo aspecto en los que se puede realizar la búsqueda de información con el personal indicado. 
+Se cuenta con el 75% de posibilidades para que se realice este proyecto de investigación, ya que en si no se requiere experimentar de alguna forma, y la persona con quien se tiene contacto en el lugar podría ayudar a otorgar el permiso de realizar las encuestas en el lugar. 
+ \\
+ \\
+Estos lugares cuentan con dispositivos tecnológicos especializados en un una función específica, algunos nuevos otros con su respectivo tiempo de trabajo; y en base al funcionamiento de estos a la hora de atender a las personas es que se conseguirá obtener una conclusión acerca de la importancia de aplicar la tecnología en el campo de la salud y también obtener cual es el nivel de satisfacción para la población de Escárcega, Campeche. \\
+ \\
+\textbf{Tipo de investigación} \\
+ \\
+Esta es una investigación cuantitativa pura con un alcance correlacional pues se consideran varios componentes en el fenómeno a estudiar y si estos se relacionan o tienen un punto de comparación, y en base a esto se busca medir el nivel de satisfacción de la población al ser atendidos, entre otras variables. \\
+Se tiene como finalidad conocer la relación o grado de asociación que existe entre la tecnología con la salud en incluso con el servicio a la población para lograr que este último factor se considere de calidad. Al evaluar el grado de asociación de estas variables, se mide cada una de ellas y después analizar su vinculación.
+\section{Bitácora de actividades}
+
+La bitácora de actividades abarcan desde la elección del tema hasta la presentacion de los resultados y se llevaron a cabo desde el mes de marzo hasta la primera semana de junio, tomando aproximadamente 12 semanas de actividades invertidas en el desarrollo de esta actividad. \\
+\\
+
+Se han anexado unas fechas para cada actividad, las cuales son las fechas en las que se realizaron cada una de ellas a excepcion de las primeras que no tienen fechas exactas debido a que se siguieron realizando cambios en el transcurso hasta el marco teórico. \\
+\\
+
+En la siguiente tabla se muestran la division de las actividades necesarias en la realización de este proyecto. Cabe señalar que aunque parezca demasiado tiempo invertido para las primeras actividades, es debido a que durante la selección del tema, las variables, objetivos y demas elementos principales se realizaron cambios necesarios para buscar obtener una mejor vision de lo que se buscaba para obtener buenos resultados. \\
+\begin{table*}[h]
+		\begin{tabular}{||p{1.5cm}|p{4cm}|p{4cm}|p{1.5cm}||}
+\hline		
+\hline
+Numero  & Actividad & Fecha Aproximada de entrega & Realizado  \\
+\hline
+1 & Definición del tema & Marzo/2017 & Si   \\ \hline
+2 & Definición de variables y objetivos           & Marzo/2017  & Si \\ \hline
+3 & Comprensión de la factibilidad del estudio    & Marzo/2017 & Si   \\ \hline
+4 & Búsqueda de artículos de referencia    & 10/Marzo/2017 & Si   \\ \hline
+5 & Elaboración del marco referencial        & 06/Abril/2017  & Si  \\ \hline
+6 & Consulta de permisos para las encuestas     & 17/Abril/2017 & Si \\ \hline
+7 & Aplicación de encuestas       & 01-12/Mayo/2017 & Si  \\ \hline
+8 & Evidencias de aplicación      &  01-12/Mayo/2017 & Si  \\ \hline
+9 & Captura de resultados de las encuestas      &  15/Mayo/2017  & Si \\ \hline
+10 & Graficación de resultados      & 26/Mayo/2017 & Si \\ \hline
+11 & Presentación de resultados      & 05/Junio/2017 & No \\
+		\hline
+		\hline
+		\end{tabular}	
+\end{table*}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\section{Evidencias fotográficas}
+\begin{figure}[h]
+ \centering
+  \subfloat{
+    \includegraphics{C:/Users/Dayra/Desktop/sr}}
+  \subfloat{
+    \includegraphics{C:/Users/Dayra/Desktop/ch}}
+    \includegraphics{C:/Users/Dayra/Desktop/br}}
+\end{figure}
+
 
 \end{document}
