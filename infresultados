@@ -1,0 +1,422 @@
+\documentclass [a4paper, 12pt]{report} 
+
+\usepackage[spanish, english]{babel} %idioma
+\usepackage[ansinew]{inputenc} %tildes
+\usepackage[T1]{fontenc} 
+\usepackage{graphics}
+\usepackage[left=3cm,right=3cm,top=3cm,botton=3cm]{geometry} %margenes
+\usepackage{float} % para usar [H]
+\usepackage{makeidx}
+
+
+
+
+\title{Instituto Tecnológico Superior de Escárcega\\ Ingeniería en Sistemas Computacionales\\ Taller de Investigación II\\ Profesor: Ing. Manuel Arturo Suarez Amendola\\ Informe de resultados\\ 
+\\ 
+\textbf{Tema de estudio \\} 
+Importancia de la tecnología en el campo de la salud y su impacto en la población de Escárcega, Campeche.}
+\author{Br. Dayra Mariana Lainez Lizcano}
+
+\begin{document} 
+ 
+\maketitle 
+\selectlanguage{spanish}
+\makeindex
+\begin{theindex}
+\item Resumen     
+\item Abstract          
+\item Introducción     1
+\item Tema y preguntas de investigación 2
+\subitem Definición del tema de investigación 2
+\subitem Preguntas de investigación        2   
+\item Marco teórico  3
+\item Hipótesis y planteamiento           6
+\subitem Hipótesis            6
+\subitem Planteamiento del problema             6
+\item Resultados      8
+\subitem Gráficas de distribuciones de variables           10
+\subitem Medir los indices de correlación entre las variables       14
+\subitem Prueba de hipótesis      15
+\item Conclusiones y trabajo a futuro   16
+\item Referencias   17
+\end{theindex}
+
+\selectlanguage{spanish}
+\begin{abstract}
+La aplicación de las tecnologías de la información y la comunicación (TIC) en el ámbito de la salud abre una larga lista de posibilidades dirigidas a la consecución de grandes beneficios en multitud de niveles del entorno sanitario. Se presenta un amplio espectro de vías de investigación en este sentido, donde el uso de las TIC toma un protagonismo muy evidente en el desarrollo de los proyectos de investigación en salud, especialmente en entornos colaborativos. \\
+El uso de las Tecnologías de la Información y la Comunicación (TIC), en la atención en salud constituye una herramienta para mejorar el impacto de las intervenciones en la comunidad, permitiendo un acceso más equitativo y eficiente a los servicios, mejorando la oportunidad de la atención y la costo-efectividad de los tratamientos.\\
+En este documento se presenta una discreta investigación del impacto de las TIC aplicadas al entorno sanitario durante el servicio a los pacientes tan solo en el municipio de Escárcega. Es decir, tomando en cuenta la opinión desde la perspectiva de los pacientes. \\
+\\
+PALABRAS CLAVE Investigación, Atención a la Salud, Tecnología, Desarrollo Tecnológico
+\end{abstract}
+\selectlanguage{english}
+\begin{abstract}
+ The application of information and communication technologies (ICTs) in the health domain enables a number of possibilities for achieving great benefits in health on multiple levels. A wide range of research opportunities within this context is presented, highlighting the important role the use of ICTs plays in health investigation, especially in collaborative environments. This document presents a brief review of the potential the application of ICTs holds for the health field and for health-related research.\\
+The use of Information and Communication Technologies (ICT) in health care is a tool to improve the impact of interventions in the community, allowing more equitable and efficient services, improving the timeliness of care and cost-effectiveness of treatments.\\
+This document presents a brief review of the impact the application of ICTs holds for the health field during the service to the patients only in Escárcega town. To mean, mistaking the opinion since the perspective of the patients.\\
+\\
+KEY WORDS Research, Health Care (Public Health), Technology, Technological Development.
+\end{abstract}
+\section{Introducción}
+
+Este informe se realiza para encontrar y demostrar la relación tecnología - salud, el impacto que tiene la primera en esta área ya que se quiere dar a conocer la relevancia del uso de las TIC en la salud, como una forma de ayudar a enfrentar las inequidades en ese ámbito. \\
+Esto surge debido a la notable presencia y uso de la tecnología  en los servicios de salud que se proporcionan, el constante avance de la ciencia hace que en la mayoría de los casos se considere el uso de las TIC para apoyar y habilitar servicios de atención médica y acciones de salud. \\
+En tiempos recientes en México ha existido un gran interés por fortalecer los servicios de salud para ofrecer una mayor efectividad, calidad y eficiencia a los usuarios de estos servicios. Un aspecto central para lograr tales objetivos es sin duda la evaluación de la tecnología para la salud (ETS).\\
+Antes de empezar de lleno se aclara que existen muchas definiciones sobre lo qeu significa tecnología, la que seguiremos es:
+Una tecnología (médica) es cualquier técnica o herramienta, producto o proceso, método o aparato que permita ampliar las capacidades humanas.\\
+Los descubrimientos científicos y técnicos han estado sucediendo desde hace siglos, su mayor influencia en la práctica ha tenido lugar después de la mitad del siglo XX, cuando se han desarrollado con carácter excepcionalmente dinámico. Ese dinamismo se encuentra dado por la rápida sucesión de éstos, y el acortamiento cada vez mayor del tiempo que media entre un descubrimiento y su introducción en la práctica. El caudal de información que se produce cada día es enorme.\\
+Las Tecnologías de la Información y comunicación (TIC) y la digitalización tienen la capacidad de incidir en todos los ámbitos de la vida y la actividad económica, así como los servicios de salud, también la calidad de la educación, el combate a la pobreza, la entrega de servicios públicos las actividades económicas y la vida cotidiana de los ciudadanos. \\
+El método que se planea utilizar para obtener la información y así medir lo que buscamos es mediante la encuesta hacia los pacientes, esto será realizado en las instalaciones del hospital general de Escárcega Dr. Janell Romero Aguilar y de igual manera tomando la opinión de personas que aunque en tiempo real no esten en el hospital, si hayan necesitado de acudir en algun momento.\\
+La tecnología se debe contemplar como la herramienta y no como el fin en sí misma. Construcción de soluciones a problemas prácticos y que proporcionen a los ciudadanos mejoras tangibles en la calidad y acceso a los servicios de salud. Es para la comprobación de esto que se quiere realizar este trabajo de investigación.\\
+Considerando que todos tienen un punto de vista diferente de la situación se ha tomado en cuenta como principal fuente la opinión de las personas cuando se les atiende, de como es su aceptación hacia el uso de tecnologia duarnte el servicio que se les ofrece. 
+\\
+
+\section{Tema y preguntas de investigación}
+
+\textbf{Definición del tema de investigación}    \\ 
+\\ 
+En esta fase se decidió el tema o problematica que se buscaba estudiar o llevar a cabo una medición, llevo u tiempo ligeramente extenso para la decisión total y al final se optó por:\\
+"La Importancia de la tecnología en el campo de la salud y su impacto en la población de Escárcega, Campeche." \\
+\\ 
+\textbf{Preguntas de investigación} \\
+
+En un principio se plantearon las siguientes preguntas para considerar que aspectos se tomarian en cuenta a lo largo de este trabajo:\\
+ \\
+¿Cómo afecta el avance de la tecnología al campo de la salud?\\
+¿Qué consecuencias trae consigo el hecho de que un lugar no cuente con el presupuesto necesario para aplicar tecnología en sus servicios?\\
+¿Cómo influye el nivel socioeconómico de los pacientes en el trato que se les brinda en cuanto a servicios tecnológicos de salud?\\
+¿El hecho de aplicar nuevas tecnologías de salud ejerce una influencia significativa en el desarrollo de la sociedad?\\
+¿Existe relación alguna entre los servicios de salud tecnológicos con un tercer factor externo?\\
+¿Cuál es el nivel de satisfacción de las personas en cuanto al servicio que se les brinda con la tecnología actual?\\
+\\
+Al final se le dió prioridad a una sola, la cual seria considerada la principal para platearse un objetivo del trabajo.\\
+\\
+¿Cuál es el nivel de satisfacción de las personas en cuanto al servicio que se les brinda con la tecnología sanitaria actual? \\
+ \\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+\section{Marco teórico}
+
+Dado que la mira central de esta investigación estará puesta en la contribución de la tecnología como apoyo en el ámbito de la salud y  hacia cierta dimensión de la satisfacción, será necesario plantear algunos parámetros que sirvan de ejes conceptuales sobre los que apoyar la investigación. \\
+\\
+Teniendo en cuenta el papel fundamental que desempeñan las TICs en el desarrollo de infraestructura, social y económico a nivel mundial, es menester definir claramente al sector, en términos de qué lo constituye, y cuál es su importancia. Diversos organismos internacionales se han dedicado a delimitar el concepto, y a discernir, llegando al acuerdo sobre los elementos que las
+conforman: Ciencia y Tecnología, Informática y Servicios de Alto Valor Agregado,
+Telecomunicaciones y Educación.\\
+\\
+De acuerdo con la Organización para la Cooperación y el Desarrollo Económico OCDE, estas herramientas se definen como sistemas tecnológicos, en los cuales se recibe, administra y procesa la información, facilitando los procesos
+comunicativos entre dos o más participantes. Frente a esto se hace importante clarificar que las TICs no solo hacen referencia a informática o procesadores, que funcionan como sistemas aislados, si no, por el contrario impulsar la conexión de
+los mismos mediante redes integradas. Además permiten una comunicación interactiva, potenciando el uso de las herramientas tradicionales de información y difusión.\\
+\\
+Teniendo en cuenta la anterior definición, y partiendo de las particularidades de la prestación de los servicios de salud, la cual está altamente condicionada por el flujo de información, las TICS aparecen como una posible respuesta a las
+necesidades de planificación, gestión de información, investigación, diagnóstico, tratamiento, etc. en este escenario.\\
+\\
+Adicionalmente al examinar las políticas actuales, en materia de salud, se encuentra como factor común una creciente demanda de nuevos modelos de gestión y de organización, donde la eficiencia y la calidad son indispensables para el alcance de los objetivos de las mismas. Estas iniciativas impulsan la implementación de herramientas que permitan la optimización de la relación
+costo- beneficio, a la vez que favorecen el desarrollo y crecimiento de los Sistemas de Salud volviéndolos más integrados y no sólo más interconectados.\\
+\\
+Segun Neguillo, generalmente se habla de implementación de TICs para la salud teniendo en cuenta tres grandes escenarios de aplicación:\\
+\\
+- Software Médico o Sistemas de Gestión Institucional: proveen a los actores del Sistema de conectividad electrónica y soportes avanzados. Estos sistemas se implementan con fines tanto administrativos como asistenciales, adicionalmente en el manejo de información de interés en salud pública, reportes epidemiológicos, seguimiento a pacientes entre otros. Su objetivo al interior de las instituciones es el de mejorar la eficiencia de la gestión en el servicio de salud.\\
+- Acceso a servicios de información para profesionales y pacientes: dentro de éste escenario se destacan el fortalecimiento en la investigación y formación de profesionales de la Salud y las aplicaciones y redes que sirven de soporte a pacientes, cuidadores y a la comunidad en general, mediante el uso de internet, aplicaciones y otros medios de comunicación
+como herramientas de interconectividad.\\
+- Soporte en comunicación a las actividades asistenciales, médicas y quirúrgicas: una de las actividades relacionadas con TICs en salud y que ha demostrado mayor impacto en la optimización de la gestión de los servicios de salud es la Telemedicina, la cual hace referencia al uso de comunicaciones para llevar a cabo una atención integral y de calidad al usuario, usando no solo el enfoque de tratamiento si no impulsando hábitos saludables de vida y prevención de la enfermedad.\\
+\\
+Las nuevas tecnologías médicas, de incuestionable eficacia diagnóstica o terapéutica, se están incorporando de forma progresiva a la asistencia sanitaria. En la difusión y uso de la tecnología, junto a la efectividad y seguridad, la cuestión dominante a la que se enfrentan quienes toman decisiones en política sanitaria, y en la industria es el costo y cómo controlarlo. Los aspectos de costos, efectividad, y seguridad están altamente interrelacionados, son complejos, y no sólo deben ser analizados para una determinada tecnología, sino que a menudo requieren ser comparados con los de la tecnología existente. \\
+\\
+A menos que una nueva tecnología sea totalmente innovadora, el problema es saber si su efectividad y seguridad son de suficiente magnitud como para reemplazar a la tecnología existente. Las tecnologías médicas de alto costo están siendo progresivamente sujetas a evaluación económica y a algún tipo de regulación con el objetivo de conseguir un uso y difusión racional. La metodología de evaluación económica en los servicios de salud ha progresado de forma continua en los últimos años.\\
+\\
+Se han realizado y se están realizando evaluaciones en diversas áreas de servicios de salud, pero todavía en el campo específico de la tecnología médica, los estudios son escasos. El impacto de la tecnología médica, y en especial de las nuevas tecnologías, en los países en desarrollo no está suficientemente evaluado en términos de costos, seguridad, eficacia, equidad, aceptabilidad y uso apropiado. La aproximación a estos aspectos se hace, muchas veces, con prejuicios y generalizaciones.\\
+\\
+En ocasiones se exageran los efectos beneficiosos de la tecnología sobre la salud, otras veces, las nuevas tecnologías son consideradas como responsables del aumento de los costos en la atención en salud, y en ocasiones, se ignora su impacto real sobre evaluación del gasto, incluyendo potenciales efectos en la reducción de los costos. La tecnología médica es útil para quien la comprende. Y ello significa comprender no sólo sus costos y beneficios, sino también en qué medida está variando la
+estructura y la cultura organizacional.\\
+\\
+En el campo de la atención en salud significa conocer los efectos de la tecnología sobre la demanda, sobre la calidad y cantidad de oferta, y sobre la organización. Esta investigación tiene como objetivo que se ha mencionado anteriormente el medir la eficacia o impacto de la tecnología en el ámbito de la salud, lo que se le conoce como: evaluación de la salud. Y  la Office of Technology Assessment  (OTA)  Oficina de Evaluación de Tecnología] ha definido la evaluación de tecnologías como una forma de investigación que examina las consecuencias técnicas, sociales, económicas, éticas y legales derivadas del uso de la tecnología y que pueden ser con efectos deseados como sobre los indeseados.\\
+\\
+Mario albornoz en Alcances y limitaciones de la noción de impacto social de la ciencia y la tecnología menciona que al momento de la medición del impacto se presentan problemas como en toda situación. “el conjunto de criterios a aplicar y su estructura lógica difieren en función del momento del proceso en el que la evaluación del impacto se aplique”. Un ejemplo de estas dificultades que pueden presentarse seria por un principio la selección de las metodologías o herramientas de apoyo para recolectar la información.\\
+\\
+En esta investigación ese pequeño inconveniente ha quedado solucionado con  la selección de herramienta  de encuesta y observación.
+A pesar de la creciente difusión de la tecnología médica y de sus implicaciones profundas, existen muy pocas investigaciones sobre sus costos, beneficios y grado de accesibilidad; esta es una observación basada en que antes de realizar la investigación, se procedió a recabar información de artículos que hayan  realizado este tipo de estudios pero solamente se hallaron 20 artículos de los cuales una cantidad menor son realmente útiles para la utilidad final que era conseguir fundamentos de apoyo para este marco.
+En “contribuciones cortas” de Julio Guerrero menciona que los resultados de la aplicación de la tecnología médica puede expresarse en 5 términos diferentes:\\
+\\
+- Eficacia\\
+- Utilidad\\
+- Efectividad\\
+- Beneficio\\
+- Experiencia \\
+\\
+Y en base a esto el estudio de esta investigación busca enfocarse en el beneficio que esto trae para la población. La evaluación de tecnologías sanitarias, tal y como va a ser tratada en este documento, se define como un análisis sistemático y estructurado de la tecnología, fundamentalmente en términos de efectividad, seguridad y costes para el sistema y que tiene como función básica proveer de soporte técnico a las decisiones en política sanitaria.\\
+\\
+Al mismo tiempo, y motivado en parte por la incorporación de tecnología cada vez más sofisticada, se ha producido un encarecimiento progresivo de la atención sanitaria, que junto con el envejecimiento de las poblaciones y otros factores administrativos ha motivado un gran aumento del gasto sanitario global. Teniendo en cuenta que los recursos de los que dispone una sociedad para la atención en salud son limitados, la evaluación de tecnologías sanitarias no se puede limitar a medir la eficacia de las técnicas, sino que es necesario asegurar que se utilizan de forma óptima, es decir, produciendo el máximo beneficio posible. En estos términos se habla del coste de oportunidad, definido como el valor de la mejor alternativa a la que hay que renunciar, por la limitación de los recursos, al efectuar una elección, y que representa el beneficio no obtenido por emplear los recursos en la actividad elegida en lugar de en la mejor de las alternativas.\\
+
+\section{Hipótesis y Planteamiento}
+\textbf{Hipótesis} \\
+ \\
+Hecho: Con la aplicación de la tecnología se brinda mejor servicio a los pacientes \\
+Hipótesis: Las herramientas tecnológicas con las que se cuentan son de gran ayuda facilitando así brindar los servicios de salud. \\
+ \\
+\textbf{Planteamiento del problema}\\
+\\
+Si bien la ciencia y la tecnología nos proporcionan numerosos y positivos beneficios, también traen consigo impactos negativos, de los cuales algunos son imprevisibles, pero todos ellos reflejan los valores, perspectivas y visiones de quienes están en condiciones de tomar decisiones concernientes al conocimiento científico y tecnológico.\\
+La ciencia y la tecnología son procesos sociales profundamente marcados por la civilización donde han crecido; el desarrollo científico y tecnológico requiere de una estimación cuidadosa de sus fuerzas motrices e impactos, un conocimiento profundo de sus interrelaciones con la sociedad.\\
+Junto a esto, los panoramas que muestran el proceso que dio lugar al despegue de estos estudios en los años sesenta, se refieren al esfuerzo por superar visiones tradicionales de la ciencia y la tecnología que subvaloran o ignoran las determinaciones e impactos sociales del desarrollo científico y tecnológico.\\
+Este es un momento oportuno en el que se tratan de identificar en el mundo, los principales problemas de la medicina y la salud pública, sus debilidades, y la necesaria voluntad política y científica para darles solución. Uno de ellos se refiere a la contradicción existente entre las ciencias médicas por un lado y la práctica médica por otro pues existe una tendencia al debilitamiento de la relación médico-paciente y el abandono del método clínico.\\
+Al mismo tiempo, y motivado en parte por la incorporación de tecnología cada vez más sofisticada, se ha producido un encarecimiento progresivo de la atención sanitaria, que junto con el envejecimiento de las poblaciones y otros factores administrativos ha
+motivado un gran aumento del gasto sanitario global. \\
+Teniendo en cuenta que los recursos de los que dispone una sociedad para la atención en salud son limitados, la evaluación de tecnologías sanitarias no se puede limitar a medir la eficacia de las técnicas, sino que es necesario asegurar que se utilizan de forma óptima, es decir, produciendo el máximo beneficio posible. En estos términos se habla del coste de oportunidad, definido como el valor de la mejor alternativa a la que hay que renunciar, por la limitación de los recursos, al efectuar una elección, y que representa el beneficio no obtenido por emplear los recursos en la actividad elegida en lugar de en la mejor de las alternativas.\\
+Tomando en cuenta lo anterior, los estudios de evaluación de estas tecnologias se definen en términos sencillos como la valoración de la seguridad, eficacia, efectividad y eficiencia de los equipos y procedimientos que se utilizan en los servicios de salud para el diagnóstico, tratamiento y rehabilitación de los pacientes.\\
+Por lo tanto, es un campo multidisciplinario de análisis que estudia las implicaciones médicas, sociales, éticas y económicas
+del desarrollo, difusión y uso de tecnología para la salud.
+El trabajo de la evaluación de la tecnología para la salud requiere asimismo la integración de actividades como la investigación, el análisis, la síntesis y la difusión de los resultados de la evaluación.\\
+Para responder a los riesgos de la incorporación no racional de tecnología para la salud y buscar la asignación de nuevos recursos médicos con una base objetiva que garantice su utilidad, se ha iniciado en algunos países diversas actividades para evaluar la tecnología de salud. \\
+Recientemente los esfuerzos en este campo se han visto beneficiados por la creación de oficinas de evaluación de tecnología en 27 países, la mayor parte de ellos europeos. En el momento actual los trabajos de estas agencias incluyen múltiples áreas, desde la evaluación de equipos hasta la evaluación de programas de atención. Todos estos países han sumado esfuerzos para evaluar la nueva tecnología para la salud.\\
+En resumen, se percibe el interés que existe en muchos países, sobre todo los industrializados, para evaluar las nuevas
+tecnologías para la salud. En estos países existe el consenso de que cada país debe buscar la dimensión apropiada de la
+tecnología de acuerdo a sus condiciones particulares.\\
+En el caso de México, la situación de las tecnologías para la salud ha cambiado rápidamente a través del tiempo. Durante la
+década de los setenta prevalecieron los modelos de adopción rápida y descontrolada que paradójicamente, en aquellos
+momentos se interpretaron como evidencias de que México mantenía una firme posición de liderazgo en América Latina, ya que contaba con un sistema de salud moderno y envidiable.\\
+Existen muy pocos antecedentes de investigación sobre la evaluación de la disponibilidad y uso de tecnologías médicas en México.\\
+Es por eso, que aunque para realizar una correcta Evaluación de tecnologias de la salud se requieran de estudios mas especializados y con mejores herramientas, se busca empezar con un poco que se lleve a cabo este tipo de estudios en el municipio de Escarcega, Campeche, para cersionarnos de que realmente se atiende a los ciudadanos de este lugar de la forma correcta que debe ser. Es decir, Este trabajo de investigación es como la primera piedra para empezar proyectos de este tipo.\\
+\\
+\section{Resultados}
+
+Despues de la aplicación de las encuestas se obtuvieron una diversidad de respuestas por parte de las perfosnas a quienes se les aplicaron, contestando a las siguientes preguntas:\\
+\\
+1.	Condición del encuestado\\
+\\
+o Usuario \\
+o Acompañante \\
+\\
+2.  Género del encuestado\\	
+\\
+o Femenino \\
+o Masculino \\
+\\	
+3.	Especialidad o servicio donde fue atendido \\
+\\
+o Registro (Afiliación, huellar, etc)   \\
+o Vacunación\\ 
+o Consulta de rutina\\ 
+o Consulta para diagnóstico de enfermedades\\
+o Planificación familiar\\ 
+o Control de embarazo\\ 
+o Servicios de odontología\\ 
+o Estabilización en urgencias\\
+o Tratamiento de esguinces\\ 
+o Hospitalización para tratamiento\\ 
+o Atención de parto\\ 
+o Atención a recién nacido\\ 
+o Tratamiento quirúrgico (cirugía)\\
+	\\	  
+4.	¿Cómo definiría la atención del servicio que se le ofreció?\\
+\\
+o	Buena\\
+o	Regular\\
+o	Deficiente\\
+\\
+5.	¿Ha notado diferencia alguna en cuanto al servicio desde la última vez que se atendió? \\
+\\
+o	Ninguna\\
+o	Mejor servicio que otras veces\\
+o	Me han atendido mejor en otras ocasiones\\
+\\
+6.	¿Durante su atención se hizo uso de alguna herramienta tecnológica?\\
+\\
+o	Medidor de presión sanguínea \\
+o	Medidor de la circulación\\
+o	Detector de huella digital\\
+o	Equipo para ayuda de flujo respiratorio\\
+o	Aparatos y accesorios para anestesia\\
+o	Equipo para cirugía\\
+o	Equipo de ultrasonidos\\
+o	Equipo para radiografías \\
+o	Reanimador, desfibrilador \\
+o	Incubadora \\
+o	Bascula digital \\
+o	Unidad dental \\
+	\\
+7.	Últimamente la tecnología se ve muy enfocada en el ámbito de la salud, ¿esto ha ayudado o perjudicado el servicio que recibe?\\
+\\
+o	Beneficia \\
+o	Perjudica  \\
+o	No le he prestado importancia \\
+Explique porque lo considera así	\\
+\\
+8.	¿Alguna vez ha recurrido a otro sitio de manera particular para recibir un servicio debido a que no puede recibirlo en el centro de salud por falta de equipo médico? \\
+\\
+o	Si\\
+o	No \\
+En caso afirmativo, ¿Cuál fue el monto de su gasto? \\
+\\	
+9.	¿Ha necesitado volverse a realizar algún estudio para una corroboración de los resultados? \\
+o	Sí he requerido de hacerlo\\
+o	No he tenido que repetirlo en otro lugar \\
+o	No he requerido estudios de ese tipo aun \\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+\subsection{Gráficas de distribuciones de variables} \\
+\\
+\\
+Condición del encuestado\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/condicion}
+\end{figure}
+\\
+\\
+Genero del encuestado\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/genero} 
+\end{figure}
+\\
+\\
+\\
+\\
+\\
+\\
+Especialidad o servicio donde fue atendido\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/especialidad}
+\end{figure}
+\\
+\\
+¿Cómo definiría la atención del servicio que se le ofreció?\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/calidadservicio} 
+\end{figure}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+¿Ha notado diferencia alguna en cuanto al servicio desde la última vez que se atendió?\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/ultimavisita} 
+\end{figure}
+\\
+\\
+¿Durante su atención se hizo uso de alguna herramienta tecnológica?\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/herramientas} 
+\end{figure}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+Últimamente la tecnología se ve muy enfocada en el ámbito de la salud, ¿esto ha ayudado o perjudicado el servicio que recibe?\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/opiniontecnologia} 
+\end{figure}
+\\
+\\
+¿Alguna vez ha recurrido a otro sitio de manera particular para recibir un servicio debido a que no puede recibirlo en el centro de salud por falta de equipo médico?\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/servicioparticular} 
+\end{figure}\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/costoparticular} 
+\end{figure}
+\\
+\\
+¿Ha necesitado volverse a realizar algún estudio para una corroboración de los resultados?\\
+\\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/corroborar} 
+\end{figure}
+\\
+\\
+\\
+\\
+\subsection{Medir los indices de correlación entre las variables} \\
+\\
+Tenemos que cada una de las preguntas que se elaboraron son variables y la correlación de cada una de ellas puede o no, darse de diferentes maneras, a continuación se presentan los indices de correlación de las variables consideradas.
+\begin{table*}[h]
+			\begin{tabular}{||p{10cm}|p{6cm}||}
+\hline		
+\hline
+Variables  & Indice de correlación \\
+\hline
+Condición y Genero del encuestado & -1   \\ \hline
+Especialidad de atención y Herramientas utilizadas &   0.480634472   \\ \hline
+Calidad de atención en el servicio y diferencia entre la ultima visita     &  0.891042111 \\ \hline
+Corroboración de resultados y Opinión del uso de la tecnología     &  -0.419313935    \\ \hline
+Uso del servicio particular y el costo del mismo     &  -1    \\
+		\hline
+		\hline
+		\end{tabular}
+\end{table*}
+\\
+Teniendo como resultado que el mayor de estos indices es el de la relación entre la calidad del servicio y la diferencia entre la ultima ves que se les atendió utilizando una herramienta tecnológica. \\
+ \\
+\begin{figure}[h]
+    \includegraphics{C:/Users/Dayra/Desktop/tallerinvestigacion/graficas/correlaciones} 
+\end{figure}
+\\
+\subsection{Prueba de hipótesis} \\
+\\
+Con los resultados obtenidos se comprueba que efectivamente el uso de la tecnología en los servicios de salud que se brindan a la población del municipio de Escárcega, Campeche. Esto se demuestra en los resultados que se obtuvieron de la pregunta acerca de la calificación que las personas le dan al servicio que se les brinda, en los cuales se hizo uso de alguna herramienta tecnológica. Que para ser precisos en todos los servicios se hizo uso de alguna de estas herramientas, hasta en los servicios mas simples se utilizo por lo menos una bascula digital.
+\\
+\\
+\\
+\\
+
+\section{Conclusiones y Trabajo a futuro}\\
+No cabe ninguna duda que, hoy en día, la llegada de las TIC al ámbito de la salud no responde a una moda ni a un ensayo de laboratorio. Por el contrario, las potencialidades aportadas al ámbito de la salud por el uso de las TIC hace que estas estén aquí para quedarse. Su utilización, a medida que vayan madurando y abarcando cada vez más ámbitos de aplicación, nos llevará a entornos de coexistencia entre los medios tradicionales y los de base telemática como elemento complementario. No obstante, también se provocará una revolución en otros procesos en los que una metamorfosis en los modelos de servicio permitirá optimizar su funcionamiento y diseño al amparo de las nuevas tecnologías.\\
+Resulta obvio también que la aplicación de las TIC es un camino de una sola dirección: una vez que se tiene acceso a los servicios propios del dominio mediante este tipo de plataformas y servicios, no parece razonable la
+vuelta atrás. \\
+Aunque algunas personas no vean el beneficio que en verdad aporta las TIC´s en la salud, por prestar mas atención a la forma en que el personal del hospital le atiende, en realidad si es de gran ayuda ya que facilita en varios aspectos los procesos y servicios que se prestan.\\
+Este proyecto de investigación fue solo como una demostración de los alcances que ofrece la tecnologia en un uso muy importante, los resultados obtenidos aqui darian paso a otros tipos de estudios mas profundos que se utilizan en la llamada Evaluacion de Tecnologías de la Salud, la cual se lleva a cabo al evaluar, valga la redundancia, las herramientas con las que se cuentan y al mismo tiempo las posibles mejoras que otras herramientas ofrecen para saber si son reemplazables o no, pero como estas evaluaciones requieren de un mayor conocimiento tanto tecnológico como del campo de la salud, no me es conveniente seguirlos realizando, puesto que no cuento con esa experiencia necesaria.
+
+\selectlanguage{spanish}
+\begin{thebibliography}{X}
+\bibitem{OCDE} \textsc{Organización Para la Cooperación y el Desarrollo Económico},
+\textit{Perspectivas
+de la OCDE sobre la tecnología de la información},2004.\textbf{Tomado de}, \textbf{http://www.oecd.org/sti/ieconomy/37765547.pdf}\\
+\bibitem{DRC} \textsc{Neguillo, D.R.C.},
+<<Nuevos modelos de prestación de servicios sanitarios
+utilizando Telemedicina. Grupo de Investigación en Telemedicina (GITM).
+>>,
+\textit{Unidad de Investigación de la Empresa Pública de Emergencias Sanitarias
+(EPES)}, \textbf{Tomado de}, \textbf{http:://www.itelemedicina.com/laRed/RevSistematica.pdf}
+\\
+\bibitem{Alb} \textsc{Albornoz M., Estebañez M.} y \textsc{Alfaraz C.},
+\textit{Alcances y limitaciones de la noción de impacto social de la ciencia y la tecnología}, segunda edición, Centro de Estudios sobre Ciencia, Desarrollo y Educación, Argentina, Revista CTS, n4, vol2, 2005.\\
+\bibitem{Pup} \textsc{Dr. Guerrero P.J.C., Abell M.I.} y \textsc{Cañedo A.R.},
+\textit{Tecnología, tecnología médica y tecnología de la salud: algunas consideraciones básicas}, Acimed, 2004,\textbf{Tomado de}, \textbf{http://bvs.sld.cu/revistas/aci/vol12_4_04/aci07404.htm}\\
+\end{thebibliography}
+
+\end{document}
